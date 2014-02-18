@@ -13,7 +13,11 @@
 # limitations under the License.
 
 # Inherit device specific files
-$(call inherit-product, device/samsung/cooper/device_cooper.mk)
+$(call inherit-product, device/samsung/cooper/device_cooper.mk
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Overrides
 PRODUCT_NAME := omni_cooper
