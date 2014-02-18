@@ -16,7 +16,7 @@
 $(call inherit-product, device/samsung/cooper/device_cooper.mk)
 
 # Overrides
-PRODUCT_NAME := full_cooper
+PRODUCT_NAME := omni_cooper
 PRODUCT_DEVICE := cooper
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-S5830
