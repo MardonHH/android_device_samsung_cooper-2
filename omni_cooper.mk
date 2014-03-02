@@ -16,8 +16,10 @@
 $(call inherit-product, device/samsung/cooper/device_cooper.mk
 
 # Inherit from our custom product configuration
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk
+$(call inherit-product, device/mdpi-common/mdpi.mk)
 
 # Overrides
 PRODUCT_NAME := omni_cooper
